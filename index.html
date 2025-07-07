@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>箱根まちなか図書館マップ</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      height: 100%;
+      background: #f5f5f5;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background: #f5f5f5;
     }
+
     object {
-      max-height: 90vh; /* 画面高の90%に収める */
-      width: auto;       /* 幅は自動調整（アスペクト比維持） */
+      max-height: 95vh;
+      width: auto;
     }
   </style>
 </head>
 <body>
-  <object data="hakone_library_map_final.svg" type="image/svg+xml">
-    SVGが表示されない場合は、SVG対応のブラウザをご利用ください。
-  </object>
+  <object type="image/svg+xml" data="hakone_library_map_final.svg"></object>
 </body>
 </html>
