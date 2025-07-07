@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>箱根まちなか図書館マップ</title>
   <style>
     body {
-      margin: 2rem;
-      font-family: sans-serif;
-      background: #f4f4f4;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
     }
-    .map-container {
-      background: #fff;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    svg {
-      width: 100%;
-      height: auto;
+    object {
+      max-height: 90vh; /* 画面高の90%に収める */
+      width: auto;       /* 幅は自動調整（アスペクト比維持） */
     }
   </style>
 </head>
 <body>
-  <h1>箱根まちなか図書館マップ</h1>
-  <div class="map-container">
-    <object type="image/svg+xml" data="hakone_library_map_hover_fixed.svg" width="100%"></object>
-  </div>
+  <object data="hakone_library_map_final.svg" type="image/svg+xml">
+    SVGが表示されない場合は、SVG対応のブラウザをご利用ください。
+  </object>
 </body>
 </html>
